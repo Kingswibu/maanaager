@@ -81,12 +81,14 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-*Hello {} !*
-────────────────────────
-✪ I'm an anime theme bot designed to help manage your telegram group with a lot features.
-✪ Maintained by @skyzu ✨
-────────────────────────
-Hit the /help to see available command.
+*Hello {} !* [😜](https://telegra.ph/file/d2c2d83613e6c73236ba1.jpg)
+۞ sᴀʏᴀ ᴀᴅᴀʟᴀʜ ʀᴏʙᴏᴛ ᴍᴀɴᴀᴊᴇᴍᴇɴ ʙᴇʀᴛᴇᴍᴀ ᴀɴɪᴍᴇ
+✦──────────❚❚──────────✦
+۞ ᴏᴡɴᴇʀ ʀᴏʙᴏᴛ : [sᴀɴɢᴇᴀɴ](https://,t.me/kingswibu)
+۞ ᴅᴀғᴛᴀʀ ʀᴏʙᴏᴛ : [ʀᴏʙᴏᴛ](https://t.me/ikilistbot)
+✦──────────❚❚──────────✦
+☰ ᴛᴇᴋᴀɴ [ʜᴇʟᴘ](http://t.me/Zmytrixsrobot?start=help) ᴜɴᴛᴜᴋ ᴍᴇʟɪʜᴀᴛ ᴘᴇʀɪɴᴛᴀʜ
+☰ ᴛᴀᴍʙᴀʜ ʙᴏᴛ ᴋᴇ ɢʀᴜᴘ ᴍᴜ
 """
 
 buttons = [
@@ -99,7 +101,7 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            text="sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ​", url="https://github.com/Skyzu/SkyzuRobot"
+            text="ʟɪsᴛ ʙᴏᴛ​", url=f"https://t.me/ikilistbot"
         ),
         InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ​", url=f"https://t.me/{SUPPORT_CHAT}"),
     ],
@@ -112,14 +114,11 @@ buttons = [
 ]
 
 HELP_STRINGS = """
-Click on the button bellow to get description about specifics command."""
+ᴛᴇᴋᴀɴ ᴘᴇʀɪɴᴛᴀʜ ᴅɪ ʙᴀᴡᴀʜ ɪɴɪ"""
 
-EMI_IMG = "https://telegra.ph/file/56811b69cbcece20bbebf.jpg"
+EMI_IMG = "https://telegra.ph/file/d2c2d83613e6c73236ba1.jpg"
 
-DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project by contacting @skyzu \
- Supporting isnt always financial! \
- Those who cannot provide monetary support are welcome to help us develop the bot at ."""
+DONATE_STRING = """ɢᴀᴋ ᴍᴀᴜ ᴅᴏɴᴀsɪ."""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -371,14 +370,14 @@ def Skyzu_about_callback(update, context):
     query = update.callback_query
     if query.data == "Skyzu_":
         query.message.edit_text(
-            text="๏ I'm *Skyzu*, a powerful group management bot built to help you manage your group easily."
+            text="๏ I'm *ɪᴋɪʀᴏʙᴏᴛ*, a powerful group management bot built to help you manage your group easily."
             "\n• I can restrict users."
             "\n• I can greet users with customizable welcome messages and even set a group's rules."
             "\n• I have an advanced anti-flood system."
             "\n• I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc."
             "\n• I have a note keeping system, blacklists, and even predetermined replies on certain keywords."
             "\n• I check for admins' permissions before executing any command and more stuffs"
-            "\n\n_Skyzu's licensed under the GNU General Public License v3.0_"
+            "\n\n_iki's licensed under the GNU General Public License v3.0_"
             "\n\n Click on button bellow to get basic help for SkyzuRobot.",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -394,7 +393,7 @@ def Skyzu_about_callback(update, context):
                     ],
                     [
                         InlineKeyboardButton(
-                            text="sᴜᴘᴘᴏʀᴛ​", callback_data="Skyzu_support"
+                            text="sᴜᴘᴘᴏʀᴛ​", url=f"https://t.me/wibucringe00"
                         ),
                         InlineKeyboardButton(
                             text="ᴄʀᴇᴅɪᴛs​", callback_data="Skyzu_credit"
@@ -402,7 +401,7 @@ def Skyzu_about_callback(update, context):
                     ],
                     [
                         InlineKeyboardButton(
-                            text="ᴍᴜsɪᴄᴘʟᴀʏᴇʀ​", callback_data="source_"
+                            text="ᴍᴜsɪᴄᴘʟᴀʏᴇʀ​", url=f"https://t.me/Zimyyrobot"
                         ),
                     ],
                     [
@@ -479,13 +478,13 @@ def Skyzu_about_callback(update, context):
 
     elif query.data == "Skyzu_credit":
         query.message.edit_text(
-            text=f"<b>๏ Credis for Skyzu</b>\n"
-            f"\nHere Developers Making The SkyzuRobot",
+            text=f"<b>๏ Credis for iki</b>\n"
+            f"\nHere Developers Making The ikiRobot",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text="Skyzu", url="t.me/skyzu"),
+                        InlineKeyboardButton(text="ɪᴋɪ", url="t.me/kingswibu"),
                     ],
                     [
                         InlineKeyboardButton(text="ɢᴏ ʙᴀᴄᴋ​", callback_data="Skyzu_"),
@@ -804,7 +803,7 @@ def main():
         try:
             dispatcher.bot.sendMessage(
                 f"@{SUPPORT_CHAT}",
-                f"""**Skyzu Robot Started!**
+                f"""**ɪᴋɪ Robot Started!**
 
 **Python:** `{memek()}`
 **Telegram Library:** `v{peler}`""",
